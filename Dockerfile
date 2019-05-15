@@ -12,6 +12,6 @@ RUN apk --no-cache add ca-certificates
 
 WORKDIR /opt/asprom
 
-COPY --from=builder /go/src/github.com/alicebob/asprom .
+COPY --from=builder /go/src/github.com/alicebob/asprom/asprom .
 
 CMD ["./asprom"]
