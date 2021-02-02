@@ -1,4 +1,5 @@
 FROM golang:1.14-alpine3.11 as builder
+LABEL org.opencontainers.image.source https://github.com/okgolove/docker-asprom
 
 WORKDIR /go/src/github.com/alicebob/asprom/
 
