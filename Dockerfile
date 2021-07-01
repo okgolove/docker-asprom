@@ -7,7 +7,7 @@ RUN apk add --no-cache git make \
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o asprom .
 
 FROM alpine:3.13
-LABEL=org.opencontainers.image.source https://github.com/okgolove/docker-asprom
+LABEL org.opencontainers.image.source=https://github.com/okgolove/docker-asprom
 
 RUN apk --no-cache add ca-certificates
 
