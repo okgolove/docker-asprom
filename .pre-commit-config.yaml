@@ -8,6 +8,6 @@ repos:
       - id: name-tests-test
       - id: double-quote-string-fixer
   - repo: https://github.com/hadolint/hadolint
-    rev: v2.6.0
+    rev: v2.6.1
     hooks:
       - id: hadolint
